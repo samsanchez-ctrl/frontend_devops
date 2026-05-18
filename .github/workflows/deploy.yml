@@ -1,7 +1,7 @@
-name: Deploy Frontend
+name: Main Frontend
 on:
   push:
-    branches: [ "deploy" ] # Se activa solo en la rama deploy
+    branches: [ "main" ] 
 
 jobs:
   build-and-push:
