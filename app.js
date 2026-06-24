@@ -35,7 +35,7 @@ async function cargarProductos() {
     if (!res.ok) throw new Error("Error al cargar productos");
     const data = await res.json();
     renderProductos(data);
-    setStatus("Productos cargados correctamente.", "ok");
+    setStatus("Productos cargados correctamente, bienvenido.", "ok");
   } catch (err) {
     console.error(err);
     setStatus("No se pudieron cargar los productos. ¿Está el backend levantado?", "error");
